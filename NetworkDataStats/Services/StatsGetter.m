@@ -20,6 +20,9 @@
 NSString *const kInterfacePrefixWifi = @"en";
 NSString *const kInterfacePrefixWWan = @"pdp_ip";
 
+
+// see example code:
+//http://stackoverflow.com/questions/7946699/iphone-data-usage-tracking-monitoring/8014012#8014012
 +(NSDictionary *)getNetworkInterfacesCounters
 {
     BOOL   success;
@@ -31,7 +34,6 @@ NSString *const kInterfacePrefixWWan = @"pdp_ip";
     NSInteger WiFiReceived = 0;
     NSInteger WWANSent = 0;
     NSInteger WWANReceived = 0;
-    
     
     success = getifaddrs(&addrs) == 0;
     if (success)

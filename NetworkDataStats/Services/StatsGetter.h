@@ -13,9 +13,7 @@
 /**
  *  get the network stats for wifi and wan since last reboot.
  *
- *  @param NSDictionary <#NSDictionary description#>
- *
- *  @return <#return value description#>
+ *  @return NSDictionary with network interfaces stats.
  */
 +(NSDictionary *)getNetworkInterfacesCounters;
 

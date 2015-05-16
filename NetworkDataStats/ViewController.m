@@ -89,7 +89,7 @@
     self.wanSentLabel.text = [NSString stringWithFormat:@"3G Sent: %@", [self formatBytesToString:stats[@"WWanSent"]]];
     self.wanReceivedLabel.text = [NSString stringWithFormat:@"3G Received: %@", [self formatBytesToString:stats[@"WWantReceived"]]];
     
-    self.lastRebootLabel.text = [NSString stringWithFormat:@"Last Reboot: %@", [[StatsManager lastRebootDate]];
+    self.lastRebootLabel.text = [NSString stringWithFormat:@"Last Reboot: %@", [StatsManager lastRebootDate]];
     self.countingSinceLabel.text = [NSString stringWithFormat:@"Counting Since: %@", [StatsManager countingSince]];
 }
 
