@@ -15,3 +15,8 @@ iOS Network Usage Meter proof of concept.
 * Does not loose stats because of reboots.
 * "Reset" button: resets counting stats (saves current stats as offset).
 * "Downoad Something": downloads a 2mb file from the internet. 
+
+
+###Attributions:
+[Stackoverflow answer](// see example code:
+//http://stackoverflow.com/questions/7946699/iphone-data-usage-tracking-monitoring/8014012#8014012) for getting the network interfaces stats.
