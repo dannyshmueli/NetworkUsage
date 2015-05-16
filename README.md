@@ -18,5 +18,4 @@ iOS Network Usage Meter proof of concept.
 
 
 ###Attributions:
-[Stackoverflow answer](// see example code:
-//http://stackoverflow.com/questions/7946699/iphone-data-usage-tracking-monitoring/8014012#8014012) for getting the network interfaces stats.
+[Stackoverflow answer](http://stackoverflow.com/questions/7946699/iphone-data-usage-tracking-monitoring/8014012#8014012) for getting the network interfaces stats.
