@@ -15,6 +15,9 @@ NSString *const kLastRebootStorageKey = @"LastRebootStorageKey";
 NSString *const kUsageOffsetStorageKey = @"DataOffsetStorageKey";
 NSString *const kUsageStorageKey = @"UsageStorageKey";
 
+// approx device boot time.
+double const kLastRebootDateCompareTollerance = 60;
+
 @implementation StatsManager
 
 #pragma mark - API
@@ -33,7 +36,7 @@ NSString *const kUsageStorageKey = @"UsageStorageKey";
     {
         NSDate *storedLastRebootDate = [self storedLastRebootDate];
         NSDate *deviceLastRebootDate = [self lastRebootDate];
-        if (fabs(deviceLastRebootDate.timeIntervalSince1970 - storedLastRebootDate.timeIntervalSince1970) < 60)
+        if (fabs(deviceLastRebootDate.timeIntervalSince1970 - storedLastRebootDate.timeIntervalSince1970) < kLastRebootDateCompareTollerance)
         {
             //we can safely store fresh stats as it's the same reboot
             [self storeFreshNetworkUsage];
