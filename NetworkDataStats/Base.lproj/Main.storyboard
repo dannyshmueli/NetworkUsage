@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi Sent: 200mb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-3v-EGb">
+                                <rect key="frame" x="204" y="35" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PyD-Jm-Xc3"/>
+                                    <constraint firstAttribute="width" constant="192" id="zI3-JC-uuI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi Received: 200mb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jx-gx-fhj">
+                                <rect key="frame" x="204" y="74" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="02A-Mt-Gvf"/>
+                                    <constraint firstAttribute="width" constant="192" id="qqH-Ey-gex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3G Sent: 200mb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lu3-aX-l8i">
+                                <rect key="frame" x="204" y="112" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="15G-bm-iyx"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZzK-PO-GhV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3G Received: 200mb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFR-7r-jAl">
+                                <rect key="frame" x="204" y="147" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ghh-Ve-NOH"/>
+                                    <constraint firstAttribute="width" constant="192" id="w68-oQ-msb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIE-Rw-S4G">
+                                <rect key="frame" x="266" y="261" width="68" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="LJT-IV-lYL"/>
+                                    <constraint firstAttribute="height" constant="35" id="VUo-eG-4ac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressResetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y4A-Um-A3o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Reboot: 1/1/1900 04:44:45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OQ-xD-FT6">
+                                <rect key="frame" x="178" y="188" width="244" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AOT-H2-L2C"/>
+                                    <constraint firstAttribute="width" constant="244" id="Bnp-Zi-YPm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting Since: 1/1/1900 04:44:45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAJ-4R-dHE">
+                                <rect key="frame" x="166" y="222" width="268" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MK8-Qk-ucl"/>
+                                    <constraint firstAttribute="width" constant="268" id="nzX-N3-a7G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR4-Lg-BzN">
+                                <rect key="frame" x="212" y="304" width="176" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3en-rR-HDD"/>
+                                    <constraint firstAttribute="width" constant="176" id="G6K-db-7ud"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Download Something">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressDownloadSomethingButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gTi-BW-lwz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bIE-Rw-S4G" secondAttribute="centerX" id="26n-jj-Gca"/>
+                            <constraint firstItem="GAJ-4R-dHE" firstAttribute="top" secondItem="2OQ-xD-FT6" secondAttribute="bottom" constant="13" id="4xr-2x-7mu"/>
+                            <constraint firstItem="bIE-Rw-S4G" firstAttribute="top" secondItem="GAJ-4R-dHE" secondAttribute="bottom" constant="18" id="8kG-dU-9dg"/>
+                            <constraint firstAttribute="centerX" secondItem="8jx-gx-fhj" secondAttribute="centerX" id="9pR-CT-dZd"/>
+                            <constraint firstItem="2OQ-xD-FT6" firstAttribute="top" secondItem="yFR-7r-jAl" secondAttribute="bottom" constant="20" id="DsF-yl-NxV"/>
+                            <constraint firstItem="yFR-7r-jAl" firstAttribute="top" secondItem="lu3-aX-l8i" secondAttribute="bottom" constant="14" id="FZk-7i-o8J"/>
+                            <constraint firstAttribute="centerX" secondItem="lu3-aX-l8i" secondAttribute="centerX" id="K2w-NN-bos"/>
+                            <constraint firstItem="8jx-gx-fhj" firstAttribute="top" secondItem="ggb-3v-EGb" secondAttribute="bottom" constant="18" id="OUA-CY-WGa"/>
+                            <constraint firstItem="lu3-aX-l8i" firstAttribute="top" secondItem="8jx-gx-fhj" secondAttribute="bottom" constant="17" id="ZfC-DK-o0l"/>
+                            <constraint firstAttribute="centerX" secondItem="ggb-3v-EGb" secondAttribute="centerX" id="bWM-6D-SZy"/>
+                            <constraint firstAttribute="centerX" secondItem="yFR-7r-jAl" secondAttribute="centerX" id="cz9-jx-LhP"/>
+                            <constraint firstItem="ggb-3v-EGb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="pvs-Cv-lUv"/>
+                            <constraint firstAttribute="centerX" secondItem="GAJ-4R-dHE" secondAttribute="centerX" id="tmL-xO-OZW"/>
+                            <constraint firstItem="TR4-Lg-BzN" firstAttribute="top" secondItem="bIE-Rw-S4G" secondAttribute="bottom" constant="8" id="vZI-hS-THJ"/>
+                            <constraint firstAttribute="centerX" secondItem="TR4-Lg-BzN" secondAttribute="centerX" id="var-8v-FnU"/>
+                            <constraint firstAttribute="centerX" secondItem="2OQ-xD-FT6" secondAttribute="centerX" id="zyf-rW-Uam"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countingSinceLabel" destination="GAJ-4R-dHE" id="RAv-BT-kBf"/>
+                        <outlet property="downloadSomethingButton" destination="TR4-Lg-BzN" id="uO4-G7-yOd"/>
+                        <outlet property="lastRebootLabel" destination="2OQ-xD-FT6" id="wyI-X0-Iz5"/>
+                        <outlet property="wanReceivedLabel" destination="yFR-7r-jAl" id="6az-2m-kDl"/>
+                        <outlet property="wanSentLabel" destination="lu3-aX-l8i" id="2ir-mI-Ycj"/>
+                        <outlet property="wifiReceivedLabel" destination="8jx-gx-fhj" id="CUZ-wg-XEr"/>
+                        <outlet property="wifiSentLabel" destination="ggb-3v-EGb" id="QKi-z4-cNt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
